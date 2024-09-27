@@ -28,8 +28,8 @@ public class HumanService {
                     Human human = new Human();
                     human.setId(humanEntity.getId());
                     human.setCnp(humanEntity.getCnp());
-                    human.setFirstName(humanEntity.getFirstName());
-                    human.setLastName(humanEntity.getLastName());
+                    human.setFirstName(humanEntity.getFirstname());
+                    human.setLastName(humanEntity.getLastname());
                     return human;
                 })
                 .collect(Collectors.toList());
@@ -43,8 +43,8 @@ public class HumanService {
                     Human createdHuman = new Human();
                     createdHuman.setId(humanEntity.getId());
                     createdHuman.setCnp(humanEntity.getCnp());
-                    createdHuman.setFirstName(humanEntity.getFirstName());
-                    createdHuman.setLastName(humanEntity.getLastName());
+                    createdHuman.setFirstName(humanEntity.getFirstname());
+                    createdHuman.setLastName(humanEntity.getLastname());
                     return createdHuman;
                 })
                 .collect(Collectors.toList());
@@ -54,8 +54,8 @@ public class HumanService {
         HumanEntity createOrUpdateMe = new HumanEntity();
         createOrUpdateMe.setId(toCreate.getId());
         createOrUpdateMe.setCnp(toCreate.getCnp());
-        createOrUpdateMe.setFirstName(toCreate.getFirstName());
-        createOrUpdateMe.setLastName(toCreate.getLastName());
+        createOrUpdateMe.setFirstname(toCreate.getFirstName());
+        createOrUpdateMe.setLastname(toCreate.getLastName());
         this.humanRepository.save(createOrUpdateMe);
 
 
@@ -68,8 +68,8 @@ public class HumanService {
                     Human human = new Human();
                     human.setId(humanEntity.getId());
                     human.setCnp(humanEntity.getCnp());
-                    human.setFirstName(humanEntity.getFirstName());
-                    human.setLastName(humanEntity.getLastName());
+                    human.setFirstName(humanEntity.getFirstname());
+                    human.setLastName(humanEntity.getLastname());
                     return human;
                 })
                 .collect(Collectors.toList());

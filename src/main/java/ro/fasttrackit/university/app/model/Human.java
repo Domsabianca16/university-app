@@ -1,5 +1,6 @@
 package ro.fasttrackit.university.app.model;
 
+
 import java.util.Objects;
 
 public class Human {
@@ -7,6 +8,7 @@ public class Human {
         private String cnp;
         private String lastname;
         private String firstname;
+
 
         public Long getId() {
             return id;

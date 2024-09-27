@@ -16,7 +16,7 @@ public class HumanController {
         this.humanService = service;
     }
 
-   @GetMapping("api/humans/{id}")
+   @GetMapping("/api/humans/{id}")
     public ResponseEntity<List<Human>> getHumanById(@PathVariable("id") Long humanId){
        return ResponseEntity.ok(humanService.getHumanById(humanId));
     }
@@ -41,7 +41,7 @@ public class HumanController {
 
    @DeleteMapping("/api/humans/{id}")
    public ResponseEntity<List<Human>> DeleteHumanById(@PathVariable("id") Long humanId){
-       return ResponseEntity.ok(humanService.getHumanById(humanId));
+       return ResponseEntity.ok(humanService.deleteById(humanId));
    }
 
 
